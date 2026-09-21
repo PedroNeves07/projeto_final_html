@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Seja Sócio - Sport Club Corinthians Paulista</title>
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#000000" alink="#000000" vlink="#555555">
+
+    <!-- CABEÇALHO COM TAGS ESPECÍFICAS -->
+    <center>
+    <header>
+        <br>
+        <h1><font face="Arial, sans-serif">PROGRAMA FIEL TORCEDOR</font></h1>
+        <p><font face="Arial, sans-serif" size="4">
+            <em>Junte-se à maior paixão do Brasil</em> 
+            <small>(Desde 1910)</small>
+        </font></p>
+        <hr width="80%" color="#000000" size="2">
+    </header>
+
+    <!-- NAVEGAÇÃO PRINCIPAL -->
+    <nav>
+        <font face="Arial, sans-serif" size="3">
+            [ <a href="apresentacao.html">Capa</a> ] 
+            [ <a href="index.html">História Principal</a> ] 
+            [ <a href="titulos.html">Títulos</a> ] 
+            [ <a href="idolos.html">Ídolos</a> ] 
+            [ <a href="fatos-marcantes.html">Fatos Marcantes</a> ] 
+            [ <a href="jogos-historicos.html">Jogos Históricos</a> ] 
+            <br><br>
+            [ <a href="artilharia.html">Artilharia</a> ] 
+            [ <a href="elenco-2025-masculino.html">Elenco 2025</a> ] 
+            [ <a href="elenco-feminino-sucesso.html">Elenco Feminino</a> ] 
+            [ <a href="curiosidades.html">Curiosidades</a> ] 
+            [ <a href="contato-ingresso.html">Fiel Torcida</a> ] 
+            [ <a href="seja-socio.html"><b>Seja Sócio</b></a> ]
+            [ <a href="especial-santos.html"><b><mark>Especial: 7x1</mark></b></a> ]
+        </font>
+    </nav>
+    <br>
+    <hr width="80%" color="#000000" size="1">
+    </center>
+
+    <main>
+        <table width="80%" align="center" cellpadding="15" cellspacing="0" border="0">
+            <tr>
+                <td>
+                    <font face="Arial, sans-serif">
+                    
+                    <!-- USO DA LISTA ORDENADA (<ol>) E TAGS BIG, SUB, SUP -->
+                    <section>
+                        <h2>Vantagens de ser Sócio:</h2>
+                        <ol>
+                            <li><big>Prioridade na compra de ingressos para a Neo Química Arena.</big></li>
+                            <li>Descontos na rede "Todo Poderoso Timão".</li>
+                            <li>Acesso a eventos exclusivos no Parque S. Jorge (Sede Oficial do Timão<sup>/sup>).</li>
+                        </ol>
+                        <p>Sua paixão é o nosso combustível (Fórmula da vitória: Raça + Suor<sub>2</sub>).</p>
+                    </section>
+
+                    <br>
+
+                    <!-- O FORMULÁRIO SUPREMO (COM TODAS AS TAGS EXIGIDAS) -->
+                    <section>
+                        <form action="boas_vindas.html" method="GET" enctype="multipart/form-data">
+                            
+                            <fieldset>
+                                <legend><b>Cadastro de Novo Fiel Torcedor</b></legend>
+                                
+                                <!-- Texto, Placeholder e Required -->
+                                <p>
+                                    <label for="nome">Nome Completo:</label><br>
+                                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                                </p>
+
+                                <!-- Forms Avançados: Date -->
+                                <p>
+                                    <label for="data-nasc">Data de Nascimento:</label><br>
+                                    <input type="date" id="data-nasc" name="nascimento" required>
+                                </p>
+
+                                <!-- ComboBox (Select / Option) -->
+                                <p>
+                                    <label for="plano">Escolha seu Plano:</label><br>
+                                    <select id="plano" name="plano">
+                                        <option value="minha-vida">Plano Minha Vida</option>
+                                        <option value="minha-historia">Plano Minha História</option>
+                                        <option value="meu-amor">Plano Meu Amor</option>
+                                    </select>
+                                </p>
+
+                                <!-- Datalist -->
+                                <p>
+                                    <label for="idolo">Quem é seu maior ídolo? (Digite para buscar):</label><br>
+                                    <input list="idolos-lista" id="idolo" name="idolo" placeholder="Ex: Cássio">
+                                    <datalist id="idolos-lista">
+                                        <option value="Cássio">
+                                        <option value="Sócrates">
+                                        <option value="Marcelinho Carioca">
+                                        <option value="Neto">
+                                        <option value="Rivellino">
+                                    </datalist>
+                                </p>
+
+                                <!-- Radiobox -->
+                                <p>
+                                    <label>Gênero:</label><br>
+                                    <input type="radio" id="masc" name="genero" value="masculino">
+                                    <label for="masc">Masculino</label>
+                                    
+                                    <input type="radio" id="fem" name="genero" value="feminino">
+                                    <label for="fem">Feminino</label>
+                                </p>
+
+                                <!-- CheckBox -->
+                                <p>
+                                    <input type="checkbox" id="newsletter" name="newsletter" checked>
+                                    <label for="newsletter">Desejo receber notícias do Corinthians por e-mail.</label>
+                                </p>
+
+                                <!-- Forms Avançados: Range (Barra de Deslizamento) -->
+                                <p>
+                                    <label for="paixao">Nível de Paixão pelo Clube (1 a 10):</label><br>
+                                    <input type="range" id="paixao" name="paixao" min="1" max="10">
+                                </p>
+
+                                <!-- Forms Avançados: Color -->
+                                <p>
+                                    <label for="cor">Escolha a cor da sua carteirinha digital:</label><br>
+                                    <input type="color" id="cor" name="cor" value="#000000">
+                                </p>
+
+                                <!-- Forms Avançados: File -->
+                                <p>
+                                    <label for="doc">Envie uma foto do seu RG (Tamanho máx 2MB):</label><br>
+                                    <input type="file" id="doc" name="documento">
+                                </p>
+
+                                <!-- Element Área (Textarea) -->
+                                <p>
+                                    <label for="mensagem">Deixe uma mensagem para o Timão:</label><br>
+                                    <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Escreva aqui..."></textarea>
+                                </p>
+
+                                <p>
+                                    <input type="submit" value="ENVIAR CADASTRO">
+                                    <input type="reset" value="LIMPAR FORMULÁRIO">
+                                </p>
+
+                            </fieldset>
+                        </form>
+                    </section>
+                    </font>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <!-- RODAPÉ -->
+    <center>
+    <br><br>
+    <hr width="80%" color="#000000" size="2">
+    <footer>
+        <font face="Arial, sans-serif" size="2">
+        <address>
+            Departamento Fiel Torcedor - Parque São Jorge.
+        </address>
+        <p>&copy; 2026 - Memorial do Timão.</p>
+        </font>
+    </footer>
+    <br>
+    </center>
+
+</body>
+</html>
